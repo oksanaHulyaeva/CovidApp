@@ -1,4 +1,4 @@
-import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../sass/navbar.scss';
 
 // type NavbarProps = {
@@ -8,7 +8,18 @@ import '../sass/navbar.scss';
 
 const Navbar: React.FC = () => {
   return (
-    <nav>sdfsf
+    <nav className={"navbar"}>
+      <ul>
+        <li>
+          <NavLink to="/map" >Map</NavLink>
+        </li>
+        <li>
+          <NavLink to="/" >Main</NavLink>
+        </li>
+        <li>
+          <NavLink to="/chart" >Charts</NavLink>
+        </li>
+      </ul>
     </nav>
   )
 
