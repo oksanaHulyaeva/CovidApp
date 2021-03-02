@@ -1,5 +1,6 @@
 import DateBlock from './DateBlock';
 import CountDownBlock from './CountdownBlock';
+import '../sass/header.scss';
 
 const Header:React.FC = () => {
   return (

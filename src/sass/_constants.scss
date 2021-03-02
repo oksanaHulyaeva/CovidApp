@@ -1,2 +1,27 @@
-$bg-dark: #1E2128;
-$bg-light: #3B3B3B;
+//CONSTANTS
+
+$bg-dark: #1B2024;
+$bg-light: #262B2F;
+$accent: #B23C4D;
+$accent2: #45435B;
+
+//PLACEHOLDERS
+
+%cursor {
+  cursor: pointer;
+}
+
+%transition {
+  transition: all .4s ease-out;
+}
+
+%bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
