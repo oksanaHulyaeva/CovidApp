@@ -1,7 +1,9 @@
+import moment from 'moment';
+
 const CountDownBlock:React.FC = () => {
   return (
-    <div>
-      {Date.now()}
+    <div className={"date-info"}>
+      {moment().startOf('day').fromNow()}
     </div>
   );
 }

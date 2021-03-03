@@ -4,10 +4,18 @@ import '../sass/header.scss';
 
 const Header:React.FC = () => {
   return (
-    <header>
+    <header className={"header"}>
       <h1>World Covid-19 Monitor</h1>
-      <DateBlock />
-      <CountDownBlock />
+      <div className={"date-block"}>
+        <div>
+          <p>Current date:</p>
+          <DateBlock />
+        </div>
+        <div>
+          <p>Last update:</p>
+          <CountDownBlock />
+        </div>
+      </div>
     </header>
   );
 }
