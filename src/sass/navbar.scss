@@ -1,0 +1,44 @@
+@import "constants";
+
+.navbar {
+  width: 15%;
+  height: 100vh;
+  min-height: 450px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $bg-dark;
+  @extend %flex-column;
+  justify-content: center;
+  ul {
+    width: 100%;
+    @extend %flex-column;
+    li {
+      height: 150px;
+      border-bottom: 1px solid $bg-light;
+      @extend %transition;
+      &:hover{
+        background-color: $bg-light;
+      }
+    }
+    .navlink {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @extend %transition;
+      &:hover svg{
+        fill: $accent;
+      }
+    }
+  }
+}
+
+.active .navbar-icon svg {
+  fill: $accent;
+  
+}
+
+.active {
+  background-color: $bg-light;
+}
