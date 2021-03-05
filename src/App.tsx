@@ -5,11 +5,13 @@ import Table from './components/Table';
 import Globe from './components/Globe';
 import Chart from './components/Chart';
 import './App.scss';
+import Header from './components/Header'
 
-function App() {
+const App:React.FC = () => {
   return (
     <BrowserRouter>
       <div className="App">
+        <Header />
         <Navbar />
         <div className={"container"}>
           <Switch>
