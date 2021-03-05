@@ -1,13 +1,13 @@
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
-import Navbar from './components/Navbar';
-import Table from './components/Table';
-import Globe from './components/Globe';
-import Chart from './components/Chart';
+import { Header } from './components/Header'
+import  { Navbar } from './components/Navbar';
+import { Main } from './components/Main';
+import { Globe } from './components/Globe';
+import { Chart } from './components/Chart';
 import './App.scss';
-import Header from './components/Header'
 
-const App:React.FC = () => {
+export const App:React.FC = () => {
   return (
     <BrowserRouter>
       <div className="App">
@@ -15,7 +15,7 @@ const App:React.FC = () => {
         <Navbar />
         <div className={"container"}>
           <Switch>
-            <Route component={Table} path="/" exact />
+            <Route component={Main} path="/" exact />
             <Route component={Globe} path="/map" />
             <Route component={Chart} path="/chart"/>
           </Switch>
@@ -24,5 +24,3 @@ const App:React.FC = () => {
     </BrowserRouter>
   );
 }
-
-export default App;

@@ -1,8 +1,8 @@
-import DateBlock from './DateBlock';
-import CountDownBlock from './CountdownBlock';
+import { DateBlock } from './DateBlock';
+import { CountDownBlock } from './CountdownBlock';
 import '../sass/header.scss';
 
-const Header:React.FC = () => {
+export const Header:React.FC = () => {
   return (
     <header className={"header"}>
       <h1>World Covid-19 Monitor</h1>
@@ -19,5 +19,3 @@ const Header:React.FC = () => {
     </header>
   );
 }
-
-export default Header;

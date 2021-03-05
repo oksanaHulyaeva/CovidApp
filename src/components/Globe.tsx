@@ -1,8 +1,5 @@
-const Globe: React.FC = () => {
+export const Globe: React.FC = () => {
   return (
     <div>Globe</div>
   )
-
 }
-
-export default Globe;

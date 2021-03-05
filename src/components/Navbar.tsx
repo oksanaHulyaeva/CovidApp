@@ -1,12 +1,10 @@
 import { NavLink } from 'react-router-dom';
 
-import ChartIcon from './Icons/ChartIcon';
-import GlobeIcon from './Icons/GlobeIcon';
-import TableIcon from './Icons/TableIcon';
+import { ChartIcon, GlobeIcon, TableIcon} from './Icons/IconSprite';
 import '../sass/navbar.scss';
 import '../sass/_constants.scss'
 
-const Navbar: React.FC = () => {
+export const Navbar: React.FC = () => {
   return (
     <nav className={"navbar"}>
       <ul>
@@ -43,7 +41,4 @@ const Navbar: React.FC = () => {
       </ul>
     </nav>
   )
-
 }
-
-export default Navbar

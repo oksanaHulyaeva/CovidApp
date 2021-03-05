@@ -1,8 +1,5 @@
-const Chart: React.FC = () => {
+export const Chart: React.FC = () => {
   return (
     <div>Chart</div>
   )
-
 }
-
-export default Chart;
